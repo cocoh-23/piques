@@ -22,4 +22,16 @@ https://nathandavison.com/blog/abusing-http-hop-by-hop-request-headers<br>
 <h2>Find URLs in js files in a domain</h2><br>
   echo "https://www.<DOMAIN>.com/<PATH>/" | go run hakrawler.go
   python3 linkfinder.py -i https://<DOMAIN>.com -d -o cli<br>
+<h2>Smuggling with unicode</h2><br>
+    https://xenome.io/http-request-smuggling-via-unicode-payloads/<br>
+    https://book.hacktricks.xyz/pentesting-web/unicode-injection<br>
+    https://github.com/subatiq/Unicode-SSRF<br>
+    https://www.synacktiv.com/en/publications/php-filter-chains-file-read-from-error-based-oracle<br>
+    https://github.com/Cameleopardus/latin1enctrunc_payload_generator/tree/master<br>
+    https://blog.ankursundara.com/cookie-bugs/<br>
+  <h2>Research ideas</h2><br>  
+    Smuggle headers bypassing browser protections, to be able to generate a xmlHttpRequest with headers that the browser does not allow (setRequestHeader with CRLF or unicode characters)
+    Fuzz request libraries such as axios to generate request smuggling (https://github.com/orangetw/Tiny-URL-Fuzzer)
+    Making header caching without impact, impactful via ESI
+    
 </body>
