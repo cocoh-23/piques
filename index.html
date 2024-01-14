@@ -9,6 +9,7 @@
 https://corben.io/blog/18-1-11-chaining-yahoo-bugs - Piques de CORS<br>
 https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/ - Piques de ESI<br>
 https://github.com/GrrrDog/weird_proxies/blob/master/Fastly.md - Weird Proxies<br>
+https://dl.acm.org/doi/pdf/10.1145/3627106.3627140 - General ideas (Exploiting HPP vulns)   
   <h2>Smuggling</h2>
 https://gist.github.com/ndavison/4c69a2c164b2125cd6685b7d5a3c135b<br>
 https://hackerone.com/reports/1675191<br>
@@ -31,20 +32,8 @@ https://nathandavison.com/blog/abusing-http-hop-by-hop-request-headers<br>
     https://github.com/Cameleopardus/latin1enctrunc_payload_generator/tree/master<br>
     https://blog.ankursundara.com/cookie-bugs/<br>
   <h2>Research ideas</h2><br>  
-    Smuggle headers bypassing browser protections, to be able to generate a xmlHttpRequest with headers that the browser does not allow (setRequestHeader with CRLF or unicode characters)
-    Fuzz request libraries such as axios to generate request smuggling (https://github.com/orangetw/Tiny-URL-Fuzzer)
-    Making header caching without impact, impactful via ESI
-    <img src="https://fuzzy-waffle-2235jpz.pages.github.io/DSC_0739.JPG"> 
-    <img src="https://fuzzy-waffle-2235jpz.pages.github.io/test">
-    <script>
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-             console.log(xhttp.responseText);
-          }
-      };
-      xhttp.open("GET", "https://fuzzy-waffle-2235jpz.pages.github.io/DSC_0739.JPG", true);
-      xhttp.send();
-    </script>
-    <script src="https://fuzzy-waffle-2235jpz.pages.github.io/ssrf.js"></script>
+    Smuggle headers bypassing browser protections, to be able to generate a xmlHttpRequest with headers that the browser does not allow (setRequestHeader with CRLF or unicode characters)<br>
+    Fuzz request libraries such as axios to generate request smuggling (https://github.com/orangetw/Tiny-URL-Fuzzer)<br>
+    Making header caching without impact, impactful via ESI <br>
+    Check what happens if I include scripts in redirects (this could allow XSS and HTML injection attacks in SSRF)
 </body>
