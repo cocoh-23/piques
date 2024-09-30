@@ -38,11 +38,26 @@ https://nathandavison.com/blog/abusing-http-hop-by-hop-request-headers<br>
     https://blog.ankursundara.com/cookie-bugs/<br>
   <h2>Interesting papers to read</h2>
     https://www.elttam.com/blog/plorming-your-primsa-orm/
+  <h2>XS-Leaks</h2><br>
+    https://blog.huli.tw/2022/04/07/en/iframe-and-window-open/<br>
+    Navigation(-less) XS-Leaks: https://docs.google.com/presentation/d/1TkoBiBFPmND32cU67f9W3GsS0zSAByG1QJZtxqBQcOU/view https://302-xsleaks-form-action.glitch.me/<br> 
+    https://2-in-1-navigations.glitch.me/  https://3p-cookie-eater.glitch.me/<br>
+    Leaking interesting browsing state with CSS: https://bugzilla.mozilla.org/show_bug.cgi?id=1917598<br>
+    Visualizing XS-Leaks: https://docs.google.com/presentation/d/1-wOEIoNf16EUwFrTXqKAR6a3V0LPO5QtRMG8Lrf_fT4/edit?usp=sharing<br>
+    https://lyra.horse/tools/frame-counter/ <br>
+    Third-Party Cookie Blocking and Cookie Access Heuristics: https://docs.google.com/presentation/d/1_YT1XhIGXJltTboC_h6uuvcNysYz-9iBKuVtl7iskqg/<br>
+    Scripted Henchmen: Leveraging XS-Leaks for Cross-Site Vulnerability Detection: https://docs.google.com/presentation/d/1E5LvGyCVYXs1QcN-23n6DAP3_cP5ZjP_INJTnU4Gh_k/edit<br>
+    Incorporating navigation initiator into Chrome's HTTP Cache key: https://docs.google.com/presentation/d/1xnGpRCyLQnLjvGLMqKZUUDCKZANFhedJyF063S7ifLE/edit?usp=sharing<br>
+    Partitioning :visited links history One Year Later: https://drive.google.com/file/d/1FAKtDjGv96myqZ2va_vdpUHWJJ9EUbO2/view?usp=sharing<br>
+    XS-Leaks Prevention in Firefox: https://docs.google.com/presentation/d/12wWyy_bHkEnFiHRrYSC47QXu9KxaY6Pun4TibzQ6Ow0/edit#slide=id.g82761e80df_0_1986<br>
+    XS-Leaks @ Google: https://daviddworken.com/xs-summit-2024.pdf<br>
+    XS-Leaks @ Meta: https://0xedward.io/pdfs/xsleaks_summit-2024.pdf 
+    <br>
   <h2>Research ideas</h2><br>  
     Smuggle headers bypassing browser protections, to be able to generate a xmlHttpRequest with headers that the browser does not allow (setRequestHeader with CRLF or unicode characters)<br>
     Fuzz request libraries such as axios to generate request smuggling (https://github.com/orangetw/Tiny-URL-Fuzzer)<br>
     Making header caching without impact, impactful via ESI <br>
     Check what happens if I include scripts in redirects (this could allow XSS and HTML injection attacks in SSRF)
     <h2> WAF Bypasses with transfer-encoding</h2><br>
-    https://blog.isec.pl/waf-evasion-techniques/
+    https://blog.isec.pl/waf-evasion-techniques/  
 </body>
