@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head></head>
 <body>
-  <h1>cocoh_23 page</h1>
+  <h1>Coqui's blog</h1>
 <!--<esi:vars>$strftime($time(), '%A %B %d, %Y')</esi:vars>
 <esi:debug/>
 <esi:include src="file:///etc/passwd"/>
@@ -13,7 +13,7 @@ https://dl.acm.org/doi/pdf/10.1145/3627106.3627140 - General ideas (Exploiting H
   <h2>CSPT</h2>
  https://www.doyensec.com/resources/Doyensec_CSPT2CSRF_Whitepaper.pdf<br>
   https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1<br>
-  <h2>Stealing HTTPOnly cookies with cookie sandwich</h2>h2><br>
+  <h2>Stealing HTTPOnly cookies with cookie sandwich</h2><br>
     https://portswigger.net/research/stealing-httponly-cookies-with-the-cookie-sandwich-technique<br>
   <h2>Smuggling</h2>
 https://gist.github.com/ndavison/4c69a2c164b2125cd6685b7d5a3c135b<br>
@@ -29,11 +29,13 @@ https://bxmbn.medium.com/ - Cache Deception<br>
   https://blog.compass-security.com/2016/10/bypassing-content-security-policy-with-dns-prefetching/<br>
 <h2>Hop by hop</h2>
 https://nathandavison.com/blog/abusing-http-hop-by-hop-request-headers<br>
-<h2> CSP Bypass with IFrames<h2><br>
+<h2> CSP Bypass with IFrames</h2>h2><br>
  https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa/<br> 
 <h2>Find URLs in js files in a domain</h2><br>
   echo "https://www.<DOMAIN>.com/<PATH>/" | go run hakrawler.go
   python3 linkfinder.py -i https://<DOMAIN>.com -d -o cli<br>
+ <h2>Google Hacking</h2>
+    https://brutecat.com/articles/leaking-youtube-emails<br>
 <h2>Smuggling with unicode</h2><br>
     https://xenome.io/http-request-smuggling-via-unicode-payloads/<br>
     https://book.hacktricks.xyz/pentesting-web/unicode-injection<br>
@@ -66,7 +68,9 @@ https://nathandavison.com/blog/abusing-http-hop-by-hop-request-headers<br>
     Smuggle headers bypassing browser protections, to be able to generate a xmlHttpRequest with headers that the browser does not allow (setRequestHeader with CRLF or unicode characters)<br>
     Fuzz request libraries such as axios to generate request smuggling (https://github.com/orangetw/Tiny-URL-Fuzzer)<br>
     Making header caching without impact, impactful via ESI <br>
-    Check what happens if I include scripts in redirects (this could allow XSS and HTML injection attacks in SSRF)
+    Check what happens if I include scripts in redirects (this could allow XSS and HTML injection attacks in SSRF)<br>
+    Ver los ORMs más comunes de los distintos frameworks, y ver que ORMs te permiten mandar múltiples parámetros y actualizan el objeto completo. (Ej: La creción de un usuario manda nombre y apellido, y la respuesta devuelve Rol. Mando rol en la creación y actualiza igual). Investigar ORMs.<br>
+    Intentar leakear por XS-Leak los likes de twitter que son privados.    
     <h2> WAF Bypasses with transfer-encoding</h2><br>
-    https://blog.isec.pl/waf-evasion-techniques/  
+    https://blog.isec.pl/waf-evasion-techniques/
 </body>
